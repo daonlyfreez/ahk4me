@@ -1,0 +1,29 @@
+A short-url site to assist mainly with AutoHotkey programming, that uses a combination of the bit.ly API for url-shortening, a couple of forms and options to assist with that, and other options that might interest AutoHotkey scripters, like: short-urls to the documentation, get external IP, get geolocation. More APIs will be added. PHP is used (Perl might be necessary for more advanced options).
+
+For more information, please visit the ahk4.me topic thread on the AutoHotkey Forum (http://www.autohotkey.com/forum/topic75499.html)
+
+You will need at least the following:
+
+* A webserver/hosting with PHP (and possibly Perl) support and access to the server's DNS A-Record
+* A (short) domain
+
+* A bit.ly account
+- Create an account, and set your main (www) domain DNS' A-Record to point to the bit.ly server (see bit.ly site for details and instructions)
+
+Create a folder on your webserver, and duplicate this folder-structure to your webserver (upload it)
+
+Edit the following files:
+
+- about/index.html (put your own info in here)
+- geo/index.php (create an account at ipinfodb.com and put your own API key in there)
+- shorten/index.html (put your own info in here)
+
+Remove/ignore the following files:
+
+- docs/.htaccess (AutoHotkey documentation specific)
+
+Create subdomains for each "API" part, and point them to the corresponding folder.
+
+That's basically it.
+
+Enjoy!
