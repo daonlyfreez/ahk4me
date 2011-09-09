@@ -1,0 +1,10 @@
+RedirectMatch /~#(.*) http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/commands/_$1.htm
+
+RedirectMatch /~(.+)#(.+) http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/commands/$1.htm#$2
+RedirectMatch /(.+)#(.+) http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/$1.htm#$2
+
+RedirectMatch /~(.*).htm http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/commands/$1.htm
+RedirectMatch /~(.*) http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/commands/$1.htm
+
+RedirectMatch /(.*).htm http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/$1.htm
+RedirectMatch /(.*) http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/$1.htm
